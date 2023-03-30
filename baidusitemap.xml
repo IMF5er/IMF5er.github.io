@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/posts/5b702f7a.html</loc>
+    <lastmod>2023-03-30</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/posts/c27044da.html</loc>
+    <lastmod>2023-03-30</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/posts/dfff04dd.html</loc>
+    <lastmod>2023-03-30</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/posts/7ed34c14.html</loc>
+    <lastmod>2023-03-30</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/posts/1460621.html</loc>
+    <lastmod>2023-03-30</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/posts/4a17b156.html</loc>
-    <lastmod>2023-03-28</lastmod>
+    <lastmod>2023-03-30</lastmod>
   </url>
 </urlset> 
